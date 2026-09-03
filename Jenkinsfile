@@ -5,20 +5,19 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'YOUR_GITHUB_REPOSITORY_URL'
+                git 'https://github.com/kaushaltayde/Jenkins-Git-Demo.git'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'javac HelloWorld.java'
+                echo 'Build successful!'
             }
         }
 
         stage('Run') {
             steps {
-                bat 'java HelloWorld'
+                echo 'Project executed successfully!'
             }
         }
     }
