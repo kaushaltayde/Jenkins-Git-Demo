@@ -2,16 +2,10 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/kaushaltayde/Jenkins-Git-Demo.git'
-            }
-        }
-
         stage('Build') {
             steps {
-                echo 'Build successful!'
+                echo 'Source code checked out successfully!'
+                echo 'Build executed successfully!'
             }
         }
 
