@@ -12,7 +12,7 @@
         stage('Run') {
             steps {
                 echo 'Project executed successfully!'
-                Jenkins webhook test
+                
             }
         }
     }
